@@ -10,9 +10,6 @@ A Meteor package of [Connect Basic Auth](http://www.senchalabs.org/connect/basic
 
 ## Usage
 
-var basicAuth = new HttpBasicAuth(<username>, <password>, [<realm>]);
-basicAuth.protect([<routes>]);
-
 ### Username and Password
 
 Create new `HttpBasicAuth` instance passing in a username and password then call `protect` method.
