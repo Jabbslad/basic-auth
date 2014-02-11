@@ -1,8 +1,4 @@
-var HttpBasicAuth = (function() {
-  //////////////// Requires /////////////
-  var require = __meteor_bootstrap__.require;
-  var connect = require('connect');
-
+HttpBasicAuth = (function() {
   var HttpBasicAuth = function(callback, realm) {
     this.callback = callback;
     this.realm = realm;
@@ -18,9 +14,9 @@ var HttpBasicAuth = (function() {
       // Splice the middleware stack and slip in the auth function
       // so it is called first at desired routes (in specified order)
       for(var i=0; i<routes.length; i++) {
-        __meteor_bootstrap__.app.stack.splice(i, 0, {
+        WebApp.connectHandlers.stack.splice(i, 0, {
           route: routes[i],
-          handle: connect.basicAuth(this.callback, this.realm)
+          handle: WebApp.__basicAuth__(this.callback, this.realm)
         });
       }
     }
