@@ -6,7 +6,7 @@ A Meteor package of [Connect Basic Auth](http://www.senchalabs.org/connect/basic
 
 ## Add Package 
 
-`meteor add basic-auth`
+`meteor add jabbslad:basic-auth`
 
 ## Usage
 

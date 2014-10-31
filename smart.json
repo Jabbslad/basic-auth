@@ -1,8 +1,0 @@
-{
-  "name": "basic-auth",
-  "description": "Add HTTP Basic Auth support to your Meteor application",
-  "homepage": "https://github.com/Jabbslad/basic-auth",
-  "author": "Jamie Atkinson <jabbslad@gmail.com>",
-  "version": "0.1.1",
-  "git": "https://github.com/Jabbslad/basic-auth.git"
-}

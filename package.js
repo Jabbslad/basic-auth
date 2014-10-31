@@ -1,8 +1,11 @@
 Package.describe({
-  summary: "Add HTTP Basic Auth support to your application"
+  summary: "Add HTTP Basic Auth support to your application",
+  version: "0.2.1",
+  git: "https://github.com/Jabbslad/basic-auth.git"
 });
 
 Package.on_use(function (api) {
+  api.versionsFrom("METEOR@0.9.0");
   api.add_files("basic-auth.js", 'server');
   api.export(['HttpBasicAuth'], 'server');
 });
