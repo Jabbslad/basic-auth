@@ -55,4 +55,6 @@ or this to use different passwords:-
 	var basicAuth = new HttpBasicAuth("guest", "password", "My Realm");
     basicAuth.protect();
 
-    
+### Thanks
+
+* [masarum](https://github.com/masarum) - Fix for Meteor 1.0.4
