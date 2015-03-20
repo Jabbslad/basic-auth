@@ -1,6 +1,6 @@
 Package.describe({
   summary: "Add HTTP Basic Auth support to your application",
-  version: "0.2.1",
+  version: "0.2.2",
   git: "https://github.com/Jabbslad/basic-auth.git"
 });
 
