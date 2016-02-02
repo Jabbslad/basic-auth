@@ -6,6 +6,7 @@ Package.describe({
 
 Package.on_use(function (api) {
   api.versionsFrom("METEOR@0.9.0");
+  api.use('webapp', 'server');
   api.add_files("basic-auth.js", 'server');
   api.export(['HttpBasicAuth'], 'server');
 });
