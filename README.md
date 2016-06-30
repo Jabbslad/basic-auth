@@ -22,7 +22,7 @@ Create new `HttpBasicAuth` instance passing in a username and password then call
 Create new `HttpBasicAuth` instance passing in a function (that returns `true` or `false`) then call `protect` method.
 
     var basicAuth = new HttpBasicAuth(function(username, password) {
-        return 'guest' == username & 'password' == password;
+        return 'guest' == username && 'password' == password;
     });
     basicAuth.protect();
     
